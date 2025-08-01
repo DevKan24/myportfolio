@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pontano+Sans:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pontano+Sans:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body class="lightmode">
+    <nav id="navbar" class="fixed-top">
+      <a href="#projects">Projects</a>
+      <a href="AboutMe/about.html">About</a>
+      <a href="Contact/contact.html">Contact</a>
+      <h3 id="name">Ahmad Khan</h3>
+      <button id="theme-switch">
+        <img id="sun-icon" src="images/light_mode.png" alt="sun" />
+        <img id="moon-icon" src="images/dark_mode.png" alt="moon" />
+      </button>
+    </nav>
+
+    <section id="welcome-section">
+      <img id="my-pic" src="images/mylogo.jpg" alt="Logo of me" />
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        I'm a passionate Front-end developer skilled in HTML, CSS, and
+        JavaScript, with growing experience in React. I'm also familiar with
+        Node.js, MySQL, MongoDB, and EJS, and I love building clean, responsive
+        web experiences.
+      </p>
+      <button id="scroll-btn">See Projects</button>
+    </section>
+
+    <section id="projects">
+      <div class="project-tile item-1">
+        <a
+          href="History of Coffee/index.html"
+          class="project-link"
+          target="_blank"
+        >
+          <h3>Coffee Website</h3>
+          <img id="coffee-cup" src="images/coffee-cup.png" alt="coffee-cup" />
+        </a>
+      </div>
+
+      <div class="project-tile item-2">
+        <a
+          href="Palindrome Project/index.html"
+          class="project-link"
+          target="_blank"
+        >
+          <h3>Palindrome Project</h3>
+          <h2>Palindrome</h2>
+        </a>
+      </div>
+
+      <div class="project-tile item-3">
+        <a href="HadithGenerator/index.html" target="_blank">
+          <h3>Hadith Generator</h3>
+          <img id="hadith-icon" src="images/hadith-icon.png" alt="quran-icon" />
+        </a>
+      </div>
+
+      <div class="project-tile item-4">
+        <a href="WeatherApp/index.html" class="project-link" target="_blank">
+          <h3>Live Weather App</h3>
+          <img id="cloud-img" src="images/cloud.png" alt="cloud-icon" />
+        </a>
+      </div>
+
+      <div class="project-tile item-5">
+        <a href="Steve Jobs/index.html" class="project-link" target="_blank">
+          <h3>Steve Jobs</h3>
+          <img id="iphone-img" src="images/iphone_img.png" alt="iphone-img" />
+        </a>
+      </div>
+
+      <div class="project-tile item-6">
+        <a href="Earth/index.html" class="project-link" target="_blank">
+          <h3>Earth Website</h3>
+          <h2>Earth</h2>
+        </a>
+      </div>
+    </section>
+    <footer id="footer">
+      <div id="icons">
+        <a
+          href="https://www.linkedin.com/in/ahmad-khan-49bb19223/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/DevKan24?tab=repositories" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+      </div>
+
+      <p>&copy; Ahmad Khan 2025</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

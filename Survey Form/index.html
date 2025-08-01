@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Coffee Survey Form</h1>
+  <p id="description"><i>Thank you for taking the time to take this quick survey!</i></p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+    <label for="email" id="email-label">Email <input id="email" type="text" placeholder="Enter your Email" required/></label>
+    <label for="number" id="number-label">Age (optional) <input id="number" type="number" min="10" max="120" placeholder="Age" /></label>
+  <label for="dropdown">Which option best describes your current role?  
+  <select id="dropdown" name="options">
+    <option disabled="" selected="" value="">Select current role</option>
+    <option value="1">Student</option>
+    <option value="2">Employee</option>
+    <option value="3">Full Time Job</option>
+    <option value="4">Full Time Learner</option>
+    <option value="5">Other</option>
+  </select>
+    </label>
+    </fieldset>
+    <!-- 2nd fieldset -->
+    <fieldset>
+      <p>Would you recommend our coffee to a friend?</p>
+        <label for="recommendation"><input id="recommendation" type="radio" name="recommend">Definetly</label>
+        <label for="recommendation"><input id="recommendation" type="radio" name="recommend">Maybe</label>
+        <label for="recommendation"><input id="recommendation" type="radio" name="recommend">Yes</label>    
+    </fieldset>
+    
+    <!-- 3rd fieldset -->
+    <fieldset>
+      <label for="features">What is your favorite type of coffee?
+        <select name="features" id="features" placeholder="Select an option">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="challenges">Mocha</option>
+          <option value="projects">Latte</option>
+          <option value="community">Cappucino</option>
+          <option value="open-source">Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <!-- 4th fieldset-->
+     <fieldset>
+      <p>What would you like to see improved?</p>
+      <label><input type="checkbox" name="improve" value="frontend"> Mocha</label>
+      <label><input type="checkbox" name="improve" value="backend"> Expresso</label>
+      <label><input type="checkbox" name="improve" value="data"> Cappucino</label>
+      <label><input type="checkbox" name="improve" value="challenges"> Americano</label>
+      <label><input type="checkbox" name="improve" value="gitter"> Cortado</label>
+      <label><input type="checkbox" name="improve" value="videos"> Latte</label>
+      <label><input type="checkbox" name="improve" value="meetups"> Flat White</label>
+      <label><input type="checkbox" name="improve" value="wiki"> Cold Brew</label>
+      <label><input type="checkbox" name="improve" value="forum"> Macchiato</label>
+      <label><input type="checkbox" name="improve" value="courses"> Other</label>
+     </fieldset>
+
+     <!-- 5th fieldset-->
+      <fieldset>
+        <label for="message">Any comments or suggestions?</label>
+        <textarea name="message" id="message" rows="6" cols="85" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+  </form>
+</body>
+</html>
