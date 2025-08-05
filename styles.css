@@ -600,7 +600,9 @@ body:not(.lightmode) #moon-icon {
   }
 
   #navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     margin-top: 0;
     margin-left: 0;
@@ -615,9 +617,10 @@ body:not(.lightmode) #moon-icon {
 
   #navbar a {
     order: 1;
-    display: inline;
+    display: inline-flex;
     margin: 0.5rem 0;
-    padding-top: -1rem;
+    padding: 0.3rem 0.6rem;
+    white-space: nowrap;
   }
 
   #scroll-btn {
