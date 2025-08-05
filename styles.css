@@ -602,10 +602,12 @@ body:not(.lightmode) #moon-icon {
   #navbar {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 0;
     margin-left: 0;
+    margin-right: 2rem;
+    gap: 1rem;
   }
 
   #name {
@@ -618,11 +620,10 @@ body:not(.lightmode) #moon-icon {
   #navbar a {
     order: 1;
     display: inline-flex;
-    margin: 0.5rem 0;
+    margin: 0 0.5rem 0 0;
     padding: 0.3rem 0.6rem;
     white-space: nowrap;
   }
-
   #scroll-btn {
     width: 100%;
   }
@@ -635,9 +636,11 @@ body:not(.lightmode) #moon-icon {
   }
 
   #theme-switch {
-    position: fixed;
-    width: 35px;
-    height: 35px;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    order: 2;
   }
 }
 
