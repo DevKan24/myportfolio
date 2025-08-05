@@ -615,7 +615,7 @@ body:not(.lightmode) #moon-icon {
 
   #navbar a {
     order: 1;
-    display: block;
+    display: inline;
     margin: 0.5rem 0;
     padding-top: -1rem;
   }
