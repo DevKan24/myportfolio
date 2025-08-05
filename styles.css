@@ -617,7 +617,7 @@ body:not(.lightmode) #moon-icon {
     order: 1;
     display: block;
     margin: 0.5rem 0;
-    padding-top: -5rem;
+    padding-top: -1rem;
   }
 
   #scroll-btn {
